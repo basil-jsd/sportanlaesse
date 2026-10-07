@@ -1,0 +1,172 @@
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.department {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.header p {
+  margin-top: 6px;
+  color: #555;
+}
+
+.section {
+  border: 1px solid #d0d0d0;
+  padding: 22px;
+  margin-bottom: 20px;
+  background: #fff;
+}
+
+.section h2 {
+  margin: -39px 0 20px;
+  width: fit-content;
+  padding: 0 8px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 22px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.field > span {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  background: #fff;
+  padding: 10px 11px;
+  font: inherit;
+}
+
+.field input:read-only {
+  background: #f4f4f4;
+  color: #555;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.fieldset {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.fieldset legend {
+  padding: 0 7px;
+  font-weight: 600;
+}
+
+.checkGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.primaryButton,
+.secondaryButton {
+  border: 0;
+  padding: 11px 24px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.primaryButton {
+  background: #f47b20;
+  color: #fff;
+}
+
+.secondaryButton {
+  background: #e7e7e7;
+  color: #333;
+}
+
+.primaryButton:disabled,
+.secondaryButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.success,
+.error {
+  padding: 13px 15px;
+  margin-top: 18px;
+}
+
+.success {
+  background: #eaf6ea;
+  border: 1px solid #a9d5a9;
+}
+
+.error {
+  background: #fdecec;
+  border: 1px solid #e0aaaa;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 18px;
+  }
+
+  .grid2,
+  .checkGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+}
